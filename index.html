@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+      
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <p color="#000000" font-size="medium" class="sc-dVhcbM fghLuF"
+                    style="margin: 0px; font-weight: 500; color: rgb(0, 0, 0); font-size: 10px;">
+                    <span>Parametr a małego pudełka</span></p>
+                <input id="a" type="number" placeholder="0">
+            </td>
+            <td>
+                <p color="#000000" font-size="medium" class="sc-dVhcbM fghLuF"
+                    style="margin: 0px; font-weight: 500; color: rgb(0, 0, 0); font-size: 10px;">
+                    <span>Parametr x dużego pudełka</span></p>
+                <input id="x" type="number" placeholder="0">
+            </td>
+            <td>
+                <p color="#000000" font-size="medium" class="sc-dVhcbM fghLuF"
+                    style="margin: 0px; font-weight: 500; color: rgb(0, 0, 0); font-size: 10px;">
+                    <span>ilość zmieszczonych pudełek</span></p>
+                <input id="result" type="text" placeholder="0">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p color="#000000" font-size="medium" class="sc-dVhcbM fghLuF"
+                    style="margin: 0px; font-weight: 500; color: rgb(0, 0, 0); font-size: 10px;">
+                    <span>Parametr b małego pudełka</span></p>
+                <input id="b" type="number" placeholder="0">
+            </td>
+            <td>
+                <p color="#000000" font-size="medium" class="sc-dVhcbM fghLuF"
+                    style="margin: 0px; font-weight: 500; color: rgb(0, 0, 0); font-size: 10px;">
+                    <span>Parametr y dużego pudełka</span></p>
+                <input id="y" type="number" placeholder="0">
+            </td>
+            <td>
+                <div class="wrapper">
+                    <button onclick="result()" class="link link--duolingo link--primary">POLICZ</button>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p color="#000000" font-size="medium" class="sc-dVhcbM fghLuF"
+                    style="margin: 0px; font-weight: 500; color: rgb(0, 0, 0); font-size: 10px;">
+                    <span>Parametr c małego pudełka</span></p>
+                <input id="c" type="number" placeholder="0">
+            </td>
+            <td>
+                <p color="#000000" font-size="medium" class="sc-dVhcbM fghLuF"
+                    style="margin: 0px; font-weight: 500; color: rgb(0, 0, 0); font-size: 10px;">
+                    <span>Parametr z dużego pudełka</span></p>
+                <input id="z" type="number" placeholder="0">
+            </td>
+        </tr>
+    </table>
+    <script>
+
+function result(){
+
+// var a = parseFloat(document.getElementById("a").value);
+// var b = parseFloat(document.getElementById("b").value);
+// var c = parseFloat(document.getElementById("c").value);
+// var x = parseFloat(document.getElementById("x").value);
+// var y = parseFloat(document.getElementById("y").value);
+// var z = parseFloat(document.getElementById("z").value);
+
+console.log("on");
+console.log((x.value / a.value) * (y.value / b.value) * (z.value / c.value) + " / " + (x.value / a.value) * (y.value / c.value) * (z.value / b.value) + " / " + (x.value / b.value) * (y.value / a.value) * (z.value / c.value) + " / " + (x.value / b.value) * (y.value / c.value) * (z.value / a.value) + " / " + (x.value / c.value) * (y.value / a.value) * (z.value / b.value) + " / " + (x.value / c.value) * (y.value / b.value) * (z.value / a.value));
+document.getElementById("result").value = (x.value / a.value) * (y.value / b.value) * (z.value / c.value) + " / " + (x.value / a.value) * (y.value / c.value) * (z.value / b.value) + " / " + (x.value / b.value) * (y.value / a.value) * (z.value / c.value) + " / " + (x.value / b.value) * (y.value / c.value) * (z.value / a.value) + " / " + (x.value / c.value) * (y.value / a.value) * (z.value / b.value) + " / " + (x.value / c.value) * (y.value / b.value) * (z.value / a.value);
+}
+
+    </script>
+
+</body>
+
+</html>
+

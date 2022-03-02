@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+textarea {
+ display:block;
+ box-sizing: border-box;
+ width:100%;
+ resize: none;
+ overflow-y: hidden;
+ 
+ /* optional CSS */
+ border: 0;
+ outline: 0;
+ background: white;
+ border-radius: 20px;
+ padding:20px;
+ font-weight: bold;
+ font-size: 1.4em;
+ color: #343434;
+
+}
+.wrapper {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  padding-top: 10px;
+}
+.link {
+    --link-color: #06b6d4;
+    padding: 0.8rem 1.25rem;
+    text-decoration: none;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.15s ease-in-out;
+    transition-property: color, background-color;
+    font: bold 0.8rem sans-serif;
+}
+.link:not(.link--duolingo):active {
+    transform: scale(0.96);
+}
+.link:hover {
+    --link-color: #0e7490;
+}
+.link--primary {
+    background-color: var(--link-color);
+    color: #fff;
+}
+.link--secondary {
+    color: var(--link-color);
+    border: 2px solid currentColor;
+}
+.link--duolingo {
+    box-shadow: 0 4px #0595ae;
+    border: none;
+}
+.link--duolingo:active {
+    transform: translateY(4px);
+    box-shadow: 0 0 #0595ae;
+}
